@@ -1,0 +1,34 @@
+/*!
+ * Brilliantcoding Theme Styles (based on Bootstrap)
+ * Copyright 2011-2017 The Bootstrap Authors
+ * Copyright 2011-2017 Twitter, Inc.
+ * Copyright 2017 Matthew Jackowski
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see https://creativecommons.org/licenses/by/3.0/.
+ */
+
+// Dev notes
+//
+// - Brilliantrcoding **custom variables** are prefixed with `$bc-`.
+//   These custom colors avoid collision with the components Bootstrap provides.
+//
+// - Classes are prefixed with `.bc-`.
+//   These classes indicate custom-built or modified components for the design
+//   and layout of the Brilliantcoding theme.
+//
+
+// Overrides
+@import "variables";
+
+@import "scss/bootstrap-v4.0.0-beta.2/bootstrap";
+
+// Theme
+@import "content";
+@import "nav";
+@import "masthead";
+@import "metadata";
+@import "post-article";
+@import "footer";
+
+$fa-font-path: "fonts/font-awesome";
+@import "scss/Font-Awesome/scss/font-awesome.scss";
