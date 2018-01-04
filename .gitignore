@@ -1,6 +1,5 @@
 /dist/
 /logos/
-/php-*/
 /scss/bootstrap*/
 /scss/Font-Awesome/
 /node_modules/
@@ -17,3 +16,5 @@ brilliantcodingalpha.zip
 /brilliantcodingalpha/iosevka/
 /brilliantcodingalpha/min/
 
+/tests/php-*/
+/tests/assets/
