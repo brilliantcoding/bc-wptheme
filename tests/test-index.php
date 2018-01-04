@@ -334,6 +334,7 @@ In this article I take a look ahead at the future of four programming languages;
 );
 
 require_once('test-functions.php');
+chdir('../brilliantcodingalpha/');
 
 require_once('includes/enqueue-scripts.php');
 
