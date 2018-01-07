@@ -269,6 +269,7 @@ $data['wp_nav_menu'] = Array
             );
 
 require_once('test-functions.php');
+chdir('../brilliantcodingalpha/');
 
 require_once('includes/enqueue-scripts.php');
 

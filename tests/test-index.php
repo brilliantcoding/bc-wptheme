@@ -146,7 +146,7 @@ In this article I take a look ahead at the future of four programming languages;
 
     'site' => Array
         (
-            'icon_url' => 'http://localhost:32771/wp-content/uploads/2016/02/Brilliant-logo-v1-120x120.png'
+            'icon_url' => 'http://localhost:8000/assets/brand/Brilliant-logo-120x120.png'
         ),
      'wp_nav_menu' => Array
      	(

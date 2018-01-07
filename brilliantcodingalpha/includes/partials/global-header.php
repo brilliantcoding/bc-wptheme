@@ -11,13 +11,6 @@
 
 <div class="navbar-nav-scroll">
 	<ul class="navbar-nav d-flex align-items-center">
-		<li class="navbar-item">
-			<a class="nav-brand mr-0" href="<?php echo $data['bloginfo']['home_url']; ?>">
-				<?php if (  $data['site']['icon_url'] ) : ?>
-					<img height="50px" width="50px" src="<?php echo $data['site']['icon_url'] ?>" />
-				<?php endif; ?>
-			</a>
-		</li>
 
 		<?php foreach ((array) $data['wp_nav_menu']['primary'] as $key => $menu_item) : ?>
 			<li class="navbar-item">

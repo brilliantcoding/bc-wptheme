@@ -32,11 +32,20 @@
 
 	</header>
 	<div class="blog-title mt-2">
-		<div class="container">
+		<div class="container d-flex">
+		    <div>
+			<a class="float-left mr-3" href="<?php echo $data['bloginfo']['home_url']; ?>">
+				<?php if (  $data['site']['icon_url'] ) : ?>
+					<img src="<?php echo $data['site']['icon_url'] ?>" />
+				<?php endif; ?>
+			</a>
+			</div>
+			<div class="align-self-end">
 			<h1 class="site-title">
 				<?php echo $data['bloginfo']['name']; ?>	
 			</h1>				
-			<p class="site-description"><?php echo $data['bloginfo']['description']; ?></p>
+			<p class="site-description mb-0"><?php echo $data['bloginfo']['description']; ?></p>
+			</div>
 		</div>
 	</div>
 
