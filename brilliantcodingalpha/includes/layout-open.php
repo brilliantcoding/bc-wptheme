@@ -3,7 +3,7 @@
 * Open layout
 *
 * The open layout does not have header banners and navigation,
-* only the global footer is retained.
+* only the global footer for identity and legalese.
 *
 * @package Brilliantcoding
 */
@@ -36,6 +36,5 @@
 			<?php wp_footer(); ?>
 		</div>
 	</footer>
-	<!-- <?php print_r($data); ?> -->
 </body>
 </html>

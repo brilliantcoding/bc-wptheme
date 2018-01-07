@@ -33,7 +33,7 @@ $data['theme']['mod_gatrackingid'] = get_theme_mod( 'gatrackingid' );
 $data['theme']['mod_disquisshortname'] = get_theme_mod( 'disqusshortname' );
 $data['theme']['skip_text'] = __( 'Skip to content', 'brilliantcoding' );
 $data['theme']['copyright_html'] = __('© 2017 Matthew Jackowski');
-$data['theme']['powered_html'] = __('- Powered by the Brilliant Coding Wordpress Theme');
+$data['theme']['powered_html'] = __('- Powered by the <a href="https://github.com/brilliantcoding/bc-wptheme">Brilliant Coding Wordpress Theme</a>');
 
 // $data['yoast']['breadcrumb'] = ( function_exists('yoast_breadcrumb')? yoast_breadcrumb('<p id="breadcrumbs">','</p>'):'';
 

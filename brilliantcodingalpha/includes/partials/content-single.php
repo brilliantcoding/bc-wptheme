@@ -30,12 +30,11 @@
 			<div class="col-md-12 text-md-left text-center ml-3 pb-5 bc-border">
 
 				<h2 class="p-name"><?php echo $post['title'] ?></h2>
-				<!-- a class="u-url" data-anchorjs-icon"#" href="<?php echo $post['permalink'] ?>"></a -->
 				<?php if ( $post['tags_list'] ): ?>
-					<div class="clearfix"><?php echo $post['tags_list'] ?></div>
+					<div class="clearfix"><?php echo (__('Tags: ', 'brilliantcoding') . $post['tags_list']); ?></div>
 				<?php endif; ?>
 				<?php if ( $post['published_date_ISO8601'] && $post['published_date'] ): ?>
-					<span>Posted on</span>
+					<span><?php echo __('Posted on:', 'brilliantcoding'); ?></span>
 					<span class="clearfix">
 						<time class="dt-published" datetime="<?php echo $post['published_date_ISO8601']; ?>">
 							<?php echo $post['published_date']; ?>
@@ -43,7 +42,7 @@
 					</span>
 				<?php endif; ?>
 				<?php if ( $post['modified_date_ISO8601'] && $post['modified_date'] ): ?>
-					<span>Last modified</span>
+					<span><?php echo __('Last modified:', 'brilliantcoding'); ?></span>
 					<span class="clearfix">
 						<time class="dt-updated" datetime="<?php echo $post['modified_date_ISO8601']; ?>">
 							<?php echo $post['modified_date']; ?>
@@ -51,6 +50,7 @@
 					</span>
 				<?php endif; ?>
 				<?php if ( $post['author'] && $post['author_posts_url'] ): ?>
+					<span><?php echo __('Published by:', 'brilliantcoding'); ?></span>
 					<span class="clearfix">
 						<a class="p-author h-card" href="<?php echo $post['author_posts_url'] ?>">
 							<?php echo $post['author']; ?>  
@@ -74,7 +74,7 @@
 </div>
 
 <!-- Disqus setup script -->
-<div id="disqus_thread"></div>
+<div id="disqus_thread" class="m-5"></div>
 <script>
     /**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -97,4 +97,3 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
