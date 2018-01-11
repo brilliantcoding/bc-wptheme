@@ -32,29 +32,31 @@ Getting Started
 Directory Structure
 ---------------
 
+```
 +---brilliantcodingalpha
-|   +---assets  					Resource files referenced in the browser
+|   +---assets  				Resource files referenced in the browser
 |   |   +---brand   				Brand icons go here
 |   |   +---css
 |   |   |   +---fonts   			Any fonts referenced by CSS
-|   |   |   |   \---<Font-Awesome>  Put Font Awesome font files here
+|   |   |   |   \---<Font-Awesome>  		Put Font Awesome font files here
 |   |   |   \---vendor 				Third-party CSS that is used in the Theme
-|   |   +---img                     Any images that are referenced by CSS
+|   |   +---img                     		Any images that are referenced by CSS
 |   |   \---js 						
 |   |       \---vendor  			Third-party libraries
 |   |           \---dep   			Library dependencies
-|   +---customizer 					Code that supports customizing the theme in the Wordpress UI
-|   +---highlight 					Library of assets that are used for code rendering
-|   +---includes 					You will find the theme templates here
+|   +---customizer 				Code that supports customizing the theme in the Wordpress UI
+|   +---highlight 				Library of assets that are used for code rendering
+|   +---includes 				You will find the theme templates here
 |   |   \---partials  				Theme partials are HTML snippets used in the template
-|   +---iosevka 					Font assets used for rendering code blocks
-|   +---languages 					Theme translation files for other languages
-|   \---min   						PHP minification - used for HTML pages
-+---build 							Build tools for compiling SASS and Javascript
-+---dist 							Compiled files
-+---js 								Theme specific Javascript source code
+|   +---iosevka 				Font assets used for rendering code blocks
+|   +---languages 				Theme translation files for other languages
+|   \---min   					PHP minification - used for HTML pages
++---build 					Build tools for compiling SASS and Javascript
++---dist 					Compiled files
++---js 						Theme specific Javascript source code
 |   \---src 						
-+---scss 							Theme specific CSS
++---scss 					Theme specific CSS
 	\---<Bootstrap-v4.x.x>			Put bootstrap SASS files here
-	\---<Font-Awesome>				Put Font-Awesome SASS files here
-\---tests 							Theme-based PHP files that allows running the Theme without Wordpress
+	\---<Font-Awesome>			Put Font-Awesome SASS files here
+\---tests 					Theme-based PHP files that allows running the Theme without Wordpress
+```
