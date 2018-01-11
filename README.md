@@ -1,3 +1,5 @@
+Brilliant Coding Alpha Wordpress Theme
+---
 
 Welcome to the Brilliant Coding Alpha, a hackable theme for Wordpress!  This theme is intended to be a starter theme for building your own awesome Wordpress theme.  And best of all it's totally free!
 
