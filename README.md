@@ -62,4 +62,3 @@ Directory Structure
 	\---<Font-Awesome>			Put Font-Awesome SASS files here
 \---tests 					Theme-based PHP files that allows running the Theme without Wordpress
 ```
->>>>>>> 4b6d7b494992255f9f1f6e501c91045e79672a7b
