@@ -47,10 +47,10 @@ Directory Structure
 |   |       \---vendor  			Third-party libraries
 |   |           \---dep   			Library dependencies
 |   +---customizer 				Code that supports customizing the theme in the Wordpress UI
-|   +---highlight 				Library of assets that are used for code rendering
+|   +---highlight 				Put highlightjs here for rendering code blocks
 |   +---includes 				You will find the theme templates here
 |   |   \---partials  				Theme partials are HTML snippets used in the template
-|   +---iosevka 				Font assets used for rendering code blocks
+|   +---iosevka 				Put font Iosevka font assets here for rendering code blocks
 |   +---languages 				Theme translation files for other languages
 |   \---min   					PHP minification - used for HTML pages
 +---build 					Build tools for compiling SASS and Javascript
