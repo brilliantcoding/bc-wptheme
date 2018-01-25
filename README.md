@@ -30,6 +30,10 @@ Getting Started
 
 7. Enjoy!
 
+Other Notes
+---------------
+
+- *All* Javascript is minified and concatenated with Uglifyjs via NPM.  Howver script dependencies can be an issue here so rather than adding additional dependency complexity we use a simple numbering convention which will sequence the inclusion of the scripts.  Scripts with low numbers will be included first (ie ones that are needed as dependencies, like jQuery). 
 
 Directory Structure
 ---------------
