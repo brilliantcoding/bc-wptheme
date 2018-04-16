@@ -53,6 +53,7 @@ if (!function_exists('brilliantcoding_setup')):
 		register_nav_menus(array(
 			'primary' => __('Primary Menu', 'brilliantcoding'),
 			'social' => __('Social Links', 'brilliantcoding'),
+			'categories' => __('Category Links', 'brilliantcoding'),
 		));
 
 		/*

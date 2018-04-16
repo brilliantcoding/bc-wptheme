@@ -2,13 +2,13 @@
 // Metadata
 //
 .bc-metadata {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $bc-divider-color;
+}
 
-  border-right: 1px solid $bc-divider-color;
-
-  .bc-author {
+.bc-metadata-sidebar {
+  .tag-list a {
     font-size: 12px;
-  }
-  .bc-tags {
-    min-height: 24px;
   }
 }

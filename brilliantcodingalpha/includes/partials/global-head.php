@@ -5,7 +5,7 @@
  * @package Brilliantcoding
  */
 ?>
-<?php $data = get_query_var( 'template_data' ); ?>
+<?php $data = get_query_var('template_data');?>
 
 
 <meta charset="<?php echo $data['bloginfo']['charset']; ?>">
@@ -20,6 +20,7 @@
 	ga('create', '<?php echo $data['theme']['mod_gatrackingid']; ?>', 'auto',{
 		'anonymizeIp': true,
 		'storage': 'none',
+		'storeGac': false,
 		'siteSpeedSampleRate': 90
 	});
 	ga('require', 'autotrack');

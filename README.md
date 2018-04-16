@@ -10,7 +10,7 @@ Some of the great libraries that are used in this theme are:
 * Font-Awesome - http://fontawesome.io/
 * Highlight + Iosevka for code rendering - https://highlightjs.org/ https://be5invis.github.io/Iosevka/
 * Minify PHP lib - https://github.com/mrclay/minify
-* Customizable Disqus and Google Analytics scripts
+* Customizable Google Analytics scripts
 * Google Fonts, Open Sans
 * Ondemand tinyurl generator
 

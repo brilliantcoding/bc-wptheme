@@ -1,0 +1,31 @@
+//
+// Sticky Sidebar
+//
+.bc-sidebar {
+  height: calc(100vh - 10rem);
+  position: sticky;
+  top: 2em;
+  overflow-y: auto;
+  order: 2;
+  font-size: .875em;
+
+  .section {
+    padding-left: 0;
+  }
+
+  .list-item {
+    display: block;
+  }
+
+  .list-link {
+    display: block;
+    padding: .125em 1.5em;
+    color: $bc-secondary-text;
+    &:hover {
+      color: $bc-primary-dark;
+      text-decoration: none;
+      background-color: transparent;
+    }
+
+  }
+}
