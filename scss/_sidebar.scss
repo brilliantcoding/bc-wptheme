@@ -7,7 +7,10 @@
   top: 2em;
   overflow-y: auto;
   order: 2;
-  font-size: .875em;
+
+  h6 {
+    text-transform: uppercase;
+  }
 
   .section {
     padding-left: 0;
@@ -19,7 +22,7 @@
 
   .list-link {
     display: block;
-    padding: .125em 1.5em;
+    padding: .125em 0;
     color: $bc-secondary-text;
     &:hover {
       color: $bc-primary-dark;

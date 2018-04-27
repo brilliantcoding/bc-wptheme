@@ -5,6 +5,9 @@
 
   h2 a {
     color: $gray-800;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .bc-border::after {
     content: "";

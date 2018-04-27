@@ -4,19 +4,17 @@
 
 .bc-navbar {
   .navbar-nav .nav-link i {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 .navbar {
-  min-height: 4rem;
   background-color: $bc-primary-dark;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
-
   .navbar-nav {
     .nav-link {
       padding: 0 .5rem 0 .5rem;
-      color: $bc-primary-light;
+      color: $white;
 
       &.active,
       &:hover {

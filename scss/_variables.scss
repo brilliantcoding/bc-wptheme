@@ -40,8 +40,8 @@ $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-800;
 
-// Links Overrides
-$link-color:                $bc-primary-dark !default;
+// Links Overrides - based on SO
+$link-color:                #07c !default;
 $link-decoration:           none !default;
-$link-hover-color:          $bc-primary-dark !default;
-$link-hover-decoration:     underline !default;
+$link-hover-color:          #3af !default;
+$link-hover-decoration:     none !default;

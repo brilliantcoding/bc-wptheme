@@ -75,9 +75,6 @@ if (!function_exists('brilliantcoding_setup')):
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
 
-		// Let's not mess around with the editor styling, or if we do, we need to give the user a way to turn it off
-		// add_editor_style( array( 'editor-style.css', brilliantcoding_fonts_url() ) );
-
 		add_theme_support('title-tag');
 	}
 endif; // brilliantcoding_setup exists?
@@ -127,43 +124,6 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 // Remove extra feed links
 add_filter('feed_links_show_comments_feed', function () {return false;});
 
-/**
- * Register Google Fonts
- */
-function brilliantcoding_fonts_url() {
-	$fonts_url = '';
-
-	$opensans = _x('on', 'Open Sans font: on or off', 'brilliantcoding');
-
-	$opensanscond = _x('on', 'Open Sans Condensed font: on or off', 'brilliantcoding');
-
-	$font_families = array();
-
-	if ('off' !== $opensans) {
-
-		$font_families[] = 'Open Sans:300,400,700,700italic,400italic,300italic';
-
-	}
-
-	if ('off' !== $opensanscond) {
-
-		$font_families[] = 'Open Sans Condensed:700,700italic';
-
-	}
-
-	if ('off' !== $opensanscond || 'off' !== $opensans) {
-
-		$query_args = array(
-			'family' => urlencode(implode('|', $font_families)),
-			'subset' => urlencode('latin,latin-ext'),
-		);
-
-		$fonts_url = add_query_arg($query_args, '//fonts.googleapis.com/css');
-	}
-
-	return $fonts_url;
-
-}
 function brilliantcoding_pre_content() {
 	if (is_feed()) {
 		return;

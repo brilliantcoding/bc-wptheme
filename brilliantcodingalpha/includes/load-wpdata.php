@@ -31,10 +31,20 @@ $data['template']['body_class'] = join(' ', get_body_class());
 
 $data['theme']['mod_gatrackingid'] = get_theme_mod('gatrackingid');
 $data['theme']['skip_text'] = __('Skip to content', 'brilliantcoding');
-$data['theme']['copyright_html'] = __('© 2017 Matthew Jackowski');
+$data['theme']['copyright_html'] = __('© 2018 Matthew Jackowski');
 $data['theme']['powered_html'] = __('- Powered by the <a href="https://github.com/brilliantcoding/bc-wptheme">Brilliant Coding Wordpress Theme</a>');
 
 // $data['yoast']['breadcrumb'] = ( function_exists('yoast_breadcrumb')? yoast_breadcrumb('<p id="breadcrumbs">','</p>'):'';
+
+$data['categories'] = array_reduce(get_categories('orderby=count&order=DESC'), function ($c, $i) {
+	$item = (array) $i;
+	$carry = $c;
+
+	$item['url'] = get_category_link($arr[$key]['cat_ID']);
+
+	array_push($carry, $item);
+	return $carry;
+}, array());
 
 $menu_name = 'primary'; // specify custom menu slug
 if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
