@@ -39,9 +39,7 @@ $data['theme']['powered_html'] = __('- Powered by the <a href="https://github.co
 $data['categories'] = array_reduce(get_categories('orderby=count&order=DESC'), function ($c, $i) {
 	$item = (array) $i;
 	$carry = $c;
-
-	$item['url'] = get_category_link($arr[$key]['cat_ID']);
-
+	$item['url'] = get_category_link($item['cat_ID']);
 	array_push($carry, $item);
 	return $carry;
 }, array());
