@@ -1,10 +1,9 @@
 /*!
  * Brilliantcoding Theme Styles (based on Bootstrap)
- * Copyright 2011-2017 The Bootstrap Authors
- * Copyright 2011-2017 Twitter, Inc.
- * Copyright 2017 Matthew Jackowski
- * Licensed under the Creative Commons Attribution 3.0 Unported License. For
- * details, see https://creativecommons.org/licenses/by/3.0/.
+ * Copyright 2017-2019 Matthew Jackowski
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 // Dev notes
@@ -20,7 +19,7 @@
 // Overrides
 @import "variables";
 
-@import "scss/bootstrap-4.0.0/scss/bootstrap";
+@import "scss/bootstrap-4.4.1/scss/bootstrap";
 
 // Theme
 @import "content";
@@ -32,5 +31,7 @@
 @import "footer";
 @import "blockquote";
 
-$fa-font-path: "fonts/font-awesome";
-@import "scss/Font-Awesome/scss/font-awesome.scss";
+$fa-font-path: "../webfonts";
+@import "scss/fontawesome-5.12.0/scss/fontawesome.scss";
+@import "scss/fontawesome-5.12.0/scss/solid.scss";
+@import "scss/fontawesome-5.12.0/scss/brands.scss";

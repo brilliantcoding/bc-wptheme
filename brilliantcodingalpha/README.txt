@@ -11,7 +11,7 @@ Brilliant Coding Alpha is a simple but opinionated theme structured for late nig
 
 == Bundled Licenses ==
 
-* Bootstrap v4.0.0-beta.2 (https://getbootstrap.com) Copyright 2011-2017 The Bootstrap Authors Copyright 2011-2017 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* Bootstrap v4.3.1 (https://getbootstrap.com/) Copyright 2011-2019 The Bootstrap Authors Copyright 2011-2019 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * Photographs depicted in screenshot.png are from unsplash.com and licensed CC0
 * Google Fonts "Open Sans" and "Open Sans Condensed" are licensed under the SIL Open Font License, Version 1.1; Source: https://www.google.com/fonts/
 * Highlight.js, Copyright (c) 2006, Ivan Sagalaev
@@ -28,3 +28,6 @@ Brilliant Coding Alpha is a simple but opinionated theme structured for late nig
 
 = 1.0 - January, 2018 =
 * Initial release.
+
+= 1.1 - December, 2019 =
+* Updated libraries, override rss self_link

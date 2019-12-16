@@ -17,7 +17,7 @@ if (!function_exists('brilliantcoding_shortcode')):
 	function brilliantcoding_shortcode() {
 		$template_url = get_bloginfo('template_url');
 		return <<<FORMAT
-<style type="text/css"> @import url("$template_url/highlight/styles/monokai.css"); </style>
+<style type="text/css"> @import url("$template_url/highlight/styles/solarized-dark.css"); </style>
 <script src="$template_url/highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <style>
@@ -107,6 +107,12 @@ add_action('init', function () {
 	remove_action('wp_head', 'wp_oembed_add_host_js');
 }, PHP_INT_MAX - 1);
 
+//Disable gutenberg style in Front
+function wps_deregister_styles() {
+	wp_dequeue_style('wp-block-library');
+}
+add_action('wp_print_styles', 'wps_deregister_styles', 100);
+
 // Remove pingback link from HTML
 add_filter('bloginfo_url', function ($output, $property) {return ($property == 'pingback_url') ? null : $output;}, 11, 2);
 
@@ -123,6 +129,9 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 
 // Remove extra feed links
 add_filter('feed_links_show_comments_feed', function () {return false;});
+
+// Fix atom links so they include the port number
+add_filter('self_link', function ($link) {return home_url() . wp_unslash($_SERVER['REQUEST_URI']);});
 
 function brilliantcoding_pre_content() {
 	if (is_feed()) {
