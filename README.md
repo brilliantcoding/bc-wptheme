@@ -5,6 +5,7 @@ Welcome to the Brilliant Coding Alpha, a hackable theme for Wordpress!  This the
 
 To see this theme in action, head over to https://brilliantcoding.com
 
+
 Some of the great libraries that are used in this theme are:
 * Bootstrap v4 - https://getbootstrap.com/
 * Font-Awesome - http://fontawesome.io/
